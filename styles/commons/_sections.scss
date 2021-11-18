@@ -1,0 +1,22 @@
+.section {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+
+  .container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1128px;
+    padding: 50px 16px;
+    width: 100%;
+
+    .col-2 {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      width: 50%;
+    }
+  }
+}

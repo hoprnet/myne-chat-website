@@ -1,0 +1,34 @@
+.background-video {
+  height: 66.25vw;
+  left: 50%;
+  min-height: 100vh;
+  min-width: 177.77vw;
+  position: absolute;
+  top: 56%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  z-index: 1;
+}
+
+.section.video {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+
+  h1,
+  h2 {
+    position: relative;
+    right: 42%;
+    z-index: 12;
+  }
+
+  button {
+    position: relative;
+    z-index: 12;
+  }
+
+  img {
+    left: 12%;
+    z-index: 12;
+  }
+}

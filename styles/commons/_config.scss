@@ -1,0 +1,58 @@
+body {
+  font-family: "Source Code Pro", monospace;
+  margin: 0;
+  padding: 0;
+  background-color: $hopr_cyan_background;
+
+  p {
+    color: $hopr_grey;
+    font-size: 1.25em;
+    font-weight: 300;
+    line-height: 2.1rem;
+  }
+
+  h1 {
+    color: $hopr_white;
+    font-size: 7.5rem;
+    font-weight: normal;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-shadow: 0rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
+  }
+
+  h2 {
+    color: $hopr_white;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  h3 {
+    color: $hopr_grey;
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    margin-top: 0;
+  }
+
+  h6 {
+    color: $hopr_grey;
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+
+  button {
+    background-color: $hopr_cyan;
+    border: none;
+    height: 30px;
+  }
+
+  .background-white {
+    background-color: $hopr_white;
+    width: 80%;
+  }
+}
