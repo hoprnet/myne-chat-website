@@ -12,9 +12,13 @@
     padding: 50px 16px;
     width: 100%;
 
+    .content-column {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
     .col-2 {
       align-items: center;
-      display: flex;
       justify-content: center;
       width: 50%;
     }

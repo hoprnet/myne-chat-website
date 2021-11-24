@@ -78,7 +78,7 @@ export const ParagraphsFooter = [
       },
       {
         description: "Documentation",
-        href: "/",
+        href: "/documentation",
       },
     ],
   },
@@ -87,15 +87,15 @@ export const ParagraphsFooter = [
     descriptions: [
       {
         description: "Data Policy",
-        href: "/",
+        href: "/privacy-policy",
       },
       {
         description: "Cookie Policy",
-        href: "/",
+        href: "/cookie-policy",
       },
       {
         description: "Terms of Service",
-        href: "/",
+        href: "/terms-service",
       },
     ],
   },
@@ -117,3 +117,15 @@ export const ParagraphsFooter = [
     ],
   },
 ];
+
+export const PrivacyPolicyPragraph = `Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+  Officia doloribus aut fugiat rerum est sequi maiores dolores quae inventore. Rem.`;
+
+export const TermsServicePragraph = `Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+Officia doloribus aut fugiat rerum est sequi maiores dolores quae inventore. Rem.`;
+
+export const CookiePolicyPragraph = `Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+  Officia doloribus aut fugiat rerum est sequi maiores dolores quae inventore. Rem.`;
+
+export const DocumentationPragraph = `Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+Officia doloribus aut fugiat rerum est sequi maiores dolores quae inventore. Rem.`;
