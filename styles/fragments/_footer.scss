@@ -1,0 +1,37 @@
+.footer {
+  h6 {
+    color: $hopr_white;
+  }
+
+  p {
+    color: $hopr_white;
+    font-size: 13px;
+  }
+
+  .second-line-footer {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      text-decoration: none;
+      p {
+        font-size: 1em;
+      }
+    }
+
+    h6 {
+      color: $hopr_white;
+    }
+
+    .emails {
+      a,
+      p {
+        color: $hopr_cyan;
+      }
+
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+}

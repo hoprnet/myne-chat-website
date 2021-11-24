@@ -5,10 +5,11 @@ body {
   background-color: $hopr_cyan_background;
 
   p {
-    color: $hopr_grey;
+    color: $hopr_black;
     font-size: 1.25em;
-    font-weight: 300;
     line-height: 2.1rem;
+    margin: 0;
+    padding: 0;
   }
 
   h1 {
@@ -32,17 +33,26 @@ body {
   }
 
   h3 {
-    color: $hopr_grey;
+    color: $hopr_black;
     font-size: 1.75rem;
     font-weight: 600;
     margin-bottom: 40px;
     margin-top: 0;
   }
 
+  h4 {
+    color: $hopr_black;
+    font-size: 1.75rem;
+    margin-bottom: 40px;
+    margin-top: 0;
+  }
+
   h6 {
-    color: $hopr_grey;
+    color: $hopr_black;
     font-size: 1.125rem;
     font-weight: 500;
+    margin: 0;
+    padding: 0;
   }
 
   button {
@@ -53,6 +63,13 @@ body {
 
   .background-white {
     background-color: $hopr_white;
-    width: 80%;
+  }
+
+  .background-gray {
+    background-color: $hopr_grey;
+  }
+
+  .background-gray-dark {
+    background-color: $hopr_grey_dark;
   }
 }
