@@ -1,14 +1,12 @@
 import React from "react";
 import { AppsProblematic } from "../molecules/appsProblematic";
+import { DownloadMyne } from "../molecules/downloadMyne";
 import { Footer } from "../molecules/footer";
 import { HowDoesWork } from "../molecules/howDoesWork";
 import { MyneImprove } from "../molecules/myneImprove";
 import { NewsLetter } from "../molecules/newsLetter";
 import { Sections } from "../molecules/sections";
 import { VideoHopr } from "../molecules/videoHopr";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 const Home = ({}) => {
   return (
@@ -33,12 +31,7 @@ const Home = ({}) => {
       </Sections>
 
       <Sections>
-        <h3>Fine, where can I download it?</h3>
-        <h3>And, where can I read more about it?</h3>
-        <button>
-          <FontAwesomeIcon icon={faArrowDown} /> Install myne v0.13
-        </button>
-        <button>Documentation</button>
+        <DownloadMyne />
       </Sections>
 
       <Sections className="background-gray">
