@@ -15,7 +15,7 @@ const Home = ({}) => {
         <VideoHopr />
       </Sections>
 
-      <Sections>
+      <Sections className="align-item-right">
         <h3>What makes other chat apps problematic?</h3>
         <AppsProblematic />
       </Sections>
