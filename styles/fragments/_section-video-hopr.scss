@@ -1,35 +1,41 @@
-.background-video {
-  height: 66.25vw;
-  left: 50%;
-  min-height: 100vh;
-  min-width: 177.77vw;
-  position: absolute;
-  top: 56%;
-  transform: translate(-50%, -50%);
-  width: 100vw;
-  z-index: 1;
-}
 
 .section.video {
   height: 100vh;
   overflow: hidden;
   position: relative;
 
-  h1,
+  .background-video {
+    bottom: 0;
+    height: 100vh;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    z-index: -1;
+  }
+
   h2 {
     position: relative;
-    right: 42%;
-    z-index: 12;
+    text-align: left;
+    margin: 0.5em 0 1em 0;
+    z-index: 1;
   }
 
   button {
     position: relative;
-    z-index: 12;
+    z-index: 1;
   }
 
   img {
-    left: 12%;
-    z-index: 12;
-    background-color: $hopr_blue;
+    z-index: 1;
+  }
+
+  .bottom-image {
+    background-color: $bright_blue;
+    bottom: 0;
+    position: absolute;
+    right: 0;
   }
 }
