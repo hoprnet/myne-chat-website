@@ -8,7 +8,7 @@ import ImageMyneLogo from "../../public/assets/images/myne_logo.png";
 
 export const VideoHopr = ({}) => {
   return (
-    <>
+    <div className="aux-container">
       <Images className="logo" src={ImageMyneLogo} width={300} height={121} />
       <h2>Chat. Finally secure</h2>
       <button type="button">
@@ -26,6 +26,6 @@ export const VideoHopr = ({}) => {
         className="background-video"
         src={require("../../public/assets/videos/myne.mp4")}
       />
-    </>
+    </div>
   );
 };
