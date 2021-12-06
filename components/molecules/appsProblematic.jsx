@@ -7,13 +7,13 @@ export const AppsProblematic = ({}) => {
     <div className="background-white sub-section apps-problematic">
       <h6>The state of chatting in the early 2020s:</h6>
       <Images src={ImageHoprPrivacy} />
-      <ul>
+      <div className="content-column">
         {ParagraphsAppsProblematic.map((x, i) => (
-          <li key={i}>
+          <div className="col-2" key={i}>
             <x.label>{x.text}</x.label>
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };
