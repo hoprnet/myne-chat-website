@@ -12,19 +12,21 @@ export const Footer = ({}) => {
           <ALink href="/">
             <Images src={ImageMyneLogo} width={220} height={80} />
           </ALink>
-          <h6>Follow us</h6>
-          {SocialNetworks.map((x, i) => (
-            <ALink href={x.href} key={i} target="_blank">
-              <Images src={x.img} width={50} height={50} />
-            </ALink>
-          ))}
+          <div className="social-networks">
+            <h6>Follow us</h6>
+            {SocialNetworks.map((x, i) => (
+              <ALink href={x.href} key={i} target="_blank">
+                <Images src={x.img} width={50} height={50}/>
+              </ALink>
+            ))}
+          </div>
           <PElement>&copy;2021 myne</PElement>
           <PElement>The myne app is developed by the HOPR Association</PElement>
         </div>
 
         <div className="col-2 second-line-footer">
           {ParagraphsFooter.map((x, i) => (
-            <div key={i}>
+            <div key={i} className="second-line-elements">
               <h6>{x.title}</h6>
               {x.descriptions.map((des, j) => (
                 <div key={j} className={des.email && "emails"}>

@@ -11,7 +11,7 @@ const TermsOfService = ({}) => {
       <Logo paragraph="Terms of service" />
 
       <Sections>
-        <ParagrahpHopr p={TermsServicePragraph} title="Terms of service" />
+        <ParagrahpHopr p={TermsServicePragraph} />
       </Sections>
 
       <Sections className="footer background-gray-dark">

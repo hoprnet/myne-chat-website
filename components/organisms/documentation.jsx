@@ -11,7 +11,7 @@ const Documentation = ({}) => {
       <Logo paragraph="Documentation" />
 
       <Sections>
-        <ParagrahpHopr p={DocumentationPragraph} title="Documentation" />
+        <ParagrahpHopr p={DocumentationPragraph} />
       </Sections>
 
       <Sections className="footer background-gray-dark">

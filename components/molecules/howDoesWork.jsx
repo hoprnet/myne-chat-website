@@ -4,12 +4,17 @@ import { ParagraphHowDoesWork } from "../../constants";
 
 export const HowDoesWork = ({}) => {
   return (
-    <div className="background-white">
-      <Images src={ImageHoprPrivacy} width={850} height={300} className="test"/>
-      <div className="apps-problematic">
-        <ul>
+    <div className="background-white sub-section how-does-work">
+      <Images
+        src={ImageHoprPrivacy}
+        width={800}
+        height={300}
+        className="logo"
+      />
+      <div>
+        <ul className="content-column">
           {ParagraphHowDoesWork.map((x, i) => (
-            <li key={i}>
+            <li key={i} className="col-2">
               <x.label>{x.text}</x.label>
             </li>
           ))}

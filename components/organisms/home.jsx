@@ -20,12 +20,12 @@ const Home = ({}) => {
         <AppsProblematic />
       </Sections>
 
-      <Sections>
+      <Sections className="align-item-right">
         <h3>What does myne improve?</h3>
         <MyneImprove />
       </Sections>
 
-      <Sections>
+      <Sections className="align-item-right">
         <h3>But how does it work?</h3>
         <HowDoesWork />
       </Sections>
@@ -35,7 +35,7 @@ const Home = ({}) => {
       </Sections>
 
       <Sections className="background-gray">
-        <h4>Newsletter</h4>
+        <h3>Newsletter</h3>
         <NewsLetter />
       </Sections>
 

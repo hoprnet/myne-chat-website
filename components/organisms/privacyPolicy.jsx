@@ -11,7 +11,7 @@ const PrivacyPolicy = ({}) => {
       <Logo paragraph="Privacy Policy" />
 
       <Sections>
-        <ParagrahpHopr p={PrivacyPolicyPragraph} title="Privacy policy"/>
+        <ParagrahpHopr p={PrivacyPolicyPragraph}/>
       </Sections>
 
       <Sections className="footer background-gray-dark">

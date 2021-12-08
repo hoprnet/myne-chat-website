@@ -23,12 +23,16 @@
     .col-2 {
       align-items: center;
       justify-content: center;
-      width: 50%;
+      width: 48%;
     }
 
     .sub-section {
       padding: 10px 15px;
       max-width: 820px;
+    }
+
+    li {
+      list-style: none;
     }
   }
 

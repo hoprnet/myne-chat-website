@@ -11,7 +11,7 @@ const CookiePolicy = ({}) => {
       <Logo paragraph="Cookie Policy" />
 
       <Sections>
-        <ParagrahpHopr p={CookiePolicyPragraph} title="Cookie policy"/>
+        <ParagrahpHopr p={CookiePolicyPragraph}/>
       </Sections>
 
       <Sections className="footer background-gray-dark">

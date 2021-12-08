@@ -1,16 +1,19 @@
 .footer {
+  p,
   h6 {
     color: $white;
+    font-size: 1em;
   }
 
-  p {
-    color: $white;
-    font-size: 13px;
+  .social-networks {
+    padding: 25px 0px 40px;
   }
 
   .second-line-footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between !important;
+    margin: 0;
+    
 
     a {
       text-decoration: none;

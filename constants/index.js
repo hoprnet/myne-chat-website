@@ -28,19 +28,19 @@ export const ParagraphsMyneImprove = [
 
 export const Paragraphs2MyneImprove = [
   {
-    title: "FEATURE 1",
-    text: "Mining HNT with Hotspots is done via radio technology, not expensive or wasteful GPUs.",
-    img: "/assets/images/frame-green.png",
+    title: "CHAT SECURELY",
+    text: "myne is fully private, so both your data and metadata are secure. Chat safe in the knowledge that no-one can find out your business or who you’re communicating with.",
+    img: "/assets/images/myne_improve_01.png",
   },
   {
-    title: "FEATURE 2",
-    text: "Mining HNT with Hotspots is done via radio technology, not expensive or wasteful GPUs.",
-    img: "/assets/images/frame-green.png",
+    title: "SUPPORT ONLINE PRIVACY",
+    text: "The technology that powers myne can make any kind of data exchange private. Be part of the future of the internet!.",
+    img: "/assets/images/myne_improve_02.png",
   },
   {
-    title: "FEATURE 3",
-    text: "Mining HNT with Hotspots is done via radio technology, not expensive or wasteful GPUs.",
-    img: "/assets/images/frame-green.png",
+    title: "EARN CRYPTO",
+    text: "myne is powered by HOPR, a fully incentivized private mixnet that rewards you for using it. Earn crypto while you chat.",
+    img: "/assets/images/myne_improve_03.png",
   },
 ];
 
@@ -121,8 +121,10 @@ export const ParagraphsFooter = [
 export const PrivacyPolicyPragraph = `Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
   Officia doloribus aut fugiat rerum est sequi maiores dolores quae inventore. Rem.`;
 
-export const TermsServicePragraph = `Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-Officia doloribus aut fugiat rerum est sequi maiores dolores quae inventore. Rem.`;
+export const TermsServicePragraph = `
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, architecto iure? Officia culpa vel fuga blanditiis aspernatur
+ praesentium sint earum et commodi, aut cum voluptates? Repudiandae minus maiores temporibus eum, nemo fugiat recusandae? Quia, 
+ recusandae cupiditate. Ab ipsum obcaecati nesciunt eum veritatis, totam a, nulla, consectetur est quod iste aliquam?.`;
 
 export const CookiePolicyPragraph = `Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
   Officia doloribus aut fugiat rerum est sequi maiores dolores quae inventore. Rem.`;
