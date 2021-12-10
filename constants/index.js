@@ -31,16 +31,19 @@ export const Paragraphs2MyneImprove = [
     title: "CHAT SECURELY",
     text: "myne is fully private, so both your data and metadata are secure. Chat safe in the knowledge that no-one can find out your business or who you’re communicating with.",
     img: "/assets/images/myne_improve_01.png",
+    height: 63.75,
   },
   {
     title: "SUPPORT ONLINE PRIVACY",
     text: "The technology that powers myne can make any kind of data exchange private. Be part of the future of the internet!.",
     img: "/assets/images/myne_improve_02.png",
+    height: 61.88,
   },
   {
     title: "EARN CRYPTO",
     text: "myne is powered by HOPR, a fully incentivized private mixnet that rewards you for using it. Earn crypto while you chat.",
     img: "/assets/images/myne_improve_03.png",
+    height: 105,
   },
 ];
 

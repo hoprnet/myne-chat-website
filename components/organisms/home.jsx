@@ -6,6 +6,7 @@ import { HowDoesWork } from "../molecules/howDoesWork";
 import { MyneImprove } from "../molecules/myneImprove";
 import { NewsLetter } from "../molecules/newsLetter";
 import { Sections } from "../molecules/sections";
+import { SectionTitles } from "../molecules/titles";
 import { VideoHopr } from "../molecules/videoHopr";
 
 const Home = ({}) => {
@@ -16,7 +17,11 @@ const Home = ({}) => {
       </Sections>
 
       <Sections className="align-item-right">
-        <h3>What makes other chat apps problematic?</h3>
+        <SectionTitles
+          title="What makes other chat apps problematic?"
+          x={-250}
+          y={0}
+        />
         <AppsProblematic />
       </Sections>
 

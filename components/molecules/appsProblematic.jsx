@@ -32,7 +32,7 @@ export const AppsProblematic = ({}) => {
 
   return (
     <div
-      className="background-white sub-section appsProblematic"
+      className="background-white sub-section"
       ref={gsapControlledRef}
     >
       <h6>The state of chatting in the early 2020s:</h6>

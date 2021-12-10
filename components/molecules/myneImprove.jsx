@@ -16,7 +16,7 @@ export const MyneImprove = ({}) => {
         <ul className="content-column myne-improve">
           {Paragraphs2MyneImprove.map((x, i) => (
             <li key={i} className="col-3">
-              <Images src={x.img} width={90} height={70} />
+              <Images src={x.img} width={90} height={x.height} />
               <p>{x.title}</p>
               <p>{x.text}</p>
             </li>
