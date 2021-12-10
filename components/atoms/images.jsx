@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const Images = ({ src, className, alt, width, height, onClick }) => {
+const Images = ({ src, className, alt, width, height, onClick}) => {
   return (
     <Image
       src={src}

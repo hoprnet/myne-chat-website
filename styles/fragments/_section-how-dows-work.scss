@@ -1,5 +1,21 @@
 .how-does-work {
-  img {
+  position: relative;
+  .image-hopr {
     background-color: $bright_blue;
+    display: flex;
+    height: 195px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  ul {
+    li {
+      a {
+        color: $button_shadow;
+        p {
+          color: $button_shadow;
+        }
+      }
+    }
   }
 }

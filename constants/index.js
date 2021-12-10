@@ -59,11 +59,11 @@ export const ParagraphHowDoesWork = [
 
 export const SocialNetworks = [
   {
-    img: "/assets/icons/github.svg",
+    img: "/assets/icons/twitter.svg",
     href: "/",
   },
   {
-    img: "/assets/icons/twitter.svg",
+    img: "/assets/icons/github.svg",
     href: "/",
   },
 ];
