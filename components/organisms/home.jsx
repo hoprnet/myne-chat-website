@@ -26,12 +26,12 @@ const Home = ({}) => {
       </Sections>
 
       <Sections className="align-item-right">
-        <h3>What does myne improve?</h3>
+        <SectionTitles title="What does myne improve?" x={0} y={-250} />
         <MyneImprove />
       </Sections>
 
       <Sections className="align-item-right">
-        <h3>But how does it work?</h3>
+        <SectionTitles title="But how does it work?" x={250} y={0} />
         <HowDoesWork />
       </Sections>
 

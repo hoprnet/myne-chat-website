@@ -2,10 +2,22 @@ import Images from "../atoms/images";
 import ImageHoprPrivacy from "../../public/assets/images/hopr_privacy.png";
 import { ParagraphHowDoesWork } from "../../constants";
 import ALink from "../atoms/a";
+import { useEffect, useRef } from "react";
+import { sectionAnimations } from "../../utils/animation";
 
 export const HowDoesWork = ({}) => {
+  const refHowDoesWork = useRef();
+
+  useEffect(() => {
+    const tl = sectionAnimations(refHowDoesWork, 0, -250);
+
+    return () => {
+      tl.kill();
+    };
+  }, [refHowDoesWork]);
+
   return (
-    <div className="background-white sub-section how-does-work">
+    <div className="background-white sub-section how-does-work" ref={refHowDoesWork}>
       <div className="image-hopr">
         <Images
           src={ImageHoprPrivacy}
