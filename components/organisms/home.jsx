@@ -40,7 +40,7 @@ const Home = ({}) => {
       </Sections>
 
       <Sections className="background-gray">
-        <h3>Newsletter</h3>
+        <SectionTitles title="Newsletter" x={-250} y={0} />
         <NewsLetter />
       </Sections>
 

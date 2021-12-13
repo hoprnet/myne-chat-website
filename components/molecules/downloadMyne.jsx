@@ -4,29 +4,21 @@ import { useEffect, useRef } from "react";
 import { sectionAnimations } from "../../utils/animation";
 
 export const DownloadMyne = ({}) => {
-  const refTitleOne = useRef();
-  const refTilteTwo = useRef();
+  const refDownloadMyne = useRef();
 
   useEffect(() => {
-    const tl = sectionAnimations(refTitleOne, 0, -250);
+    const tl = sectionAnimations(refDownloadMyne, 200, -250);
 
     return () => {
       tl.kill();
     };
-  }, [refTitleOne]);
+  }, [refDownloadMyne]);
 
-  
-  useEffect(() => {
-    const tl = sectionAnimations(refTilteTwo, 250, -250);
 
-    return () => {
-      tl.kill();
-    };
-  }, [refTilteTwo]);
   return (
-    <>
-      <h3 ref={refTitleOne}>Alright, where can I download it?</h3>
-      <h3 ref={refTilteTwo}>And, where can I read more about it?</h3>
+    <div ref={refDownloadMyne}>
+      <h3>Alright, where can I download it?</h3>
+      <h3>And, where can I read more about it?</h3>
       <div className="section-download-myne">
         <div className="content-column">
           <div className="col-2">
@@ -40,6 +32,6 @@ export const DownloadMyne = ({}) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };

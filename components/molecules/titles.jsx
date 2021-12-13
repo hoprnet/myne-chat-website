@@ -4,23 +4,23 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export const SectionTitles = ({ title, x, y }) => {
-  const gsapControlledRef = useRef();
+  const refTitle = useRef();
 
   useEffect(() => {
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: gsapControlledRef.current,
+        trigger: refTitle.current,
         start: "top center",
         toggleActions: "play none none reverse",
       },
     });
 
-    tl.from(gsapControlledRef.current, {
+    tl.from(refTitle.current, {
       duration: 0.5,
       autoAlpha: 0,
       ease: "power1.inOut",
       x: x,
-      y: y
+      y: y,
     });
 
     return () => {
@@ -29,7 +29,7 @@ export const SectionTitles = ({ title, x, y }) => {
   }, []);
 
   return (
-    <div ref={gsapControlledRef}>
+    <div ref={refTitle}>
       <h3>{title}</h3>
     </div>
   );
