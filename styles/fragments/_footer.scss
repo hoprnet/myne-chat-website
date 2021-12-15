@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap");
+
 .footer {
   p,
   h6 {
@@ -5,23 +7,24 @@
     font-size: 1em;
   }
 
+  p {
+    width: 100% !important;
+  }
+
   .social-networks {
     padding: 25px 0px 50px;
   }
 
-  .only-desktop-view {
-    .hopr-association {
+  .hopr-association {
+    p {
+      display: inline;
+      margin: 0
+    }
+    a {
       p {
-        display: inline-block;
-        white-space: pre-wrap;
-      }
-
-      a {
-        p {
-          color: $cyan;
-          text-decoration-thickness: 1px !important;
-          text-decoration: underline;
-        }
+        color: $cyan;
+        text-decoration-thickness: 1px !important;
+        text-decoration: underline;
       }
     }
   }
@@ -50,6 +53,25 @@
         text-decoration: underline;
       }
     }
+
+    .col-2 {
+      .logo-text-animated {
+        a {
+          display: flex;
+          margin: 0;
+
+          .cursor-animated {
+            color: $cyan;
+          }
+        }
+      }
+
+      h2 {
+        font-family: "Maven Pro", sans-serif;
+        font-size: 90px;
+        margin: 0;
+      }
+    }
   }
 
   @media screen and (max-width: 767px) {
@@ -58,20 +80,6 @@
     }
     .only-mobile-view {
       padding-top: 25px;
-      .hopr-association {
-        p {
-          display: inline-block;
-          white-space: pre-wrap;
-        }
-
-        a {
-          p {
-            color: $cyan;
-            text-decoration-thickness: 1px !important;
-            text-decoration: underline;
-          }
-        }
-      }
     }
   }
 }

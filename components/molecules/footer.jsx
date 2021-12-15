@@ -4,14 +4,58 @@ import Images from "../atoms/images";
 import PElement from "../atoms/p";
 import ALink from "../atoms/a";
 
+import { gsap } from "gsap/dist/gsap";
+import { useEffect, useRef } from "react";
+import TextPlugin from "gsap/dist/TextPlugin";
+gsap.registerPlugin(TextPlugin);
+
 export const Footer = ({}) => {
+  useEffect(() => {
+    gsap.to("#cursor", {
+      opacity: 0,
+      ease: "power2.inOut",
+      repeat: -1,
+    });
+    let masterTl = gsap.timeline({ repeat: -1, repeatDelay: 1.5 }).pause();
+    let boxTl = gsap.timeline();
+
+    boxTl
+      .to("#box", {
+        duration: 1,
+        delay: 0.5,
+        ease: "power4.inOut",
+      })
+      .to("#box", {
+        duration: 1,
+        ease: "elastic.out",
+        onComplete: () => masterTl.play(),
+      })
+      .to("#box", {
+        duration: 2,
+        autoAlpha: 0.7,
+        yoyo: true,
+        repeat: -1,
+        ease: "rough({ template: none.out, strength:  1, points: 20, taper: 'none', randomize: true, clamp: false})",
+      });
+
+    let tl = gsap.timeline({ repeat: 1, yoyo: true, repeatDelay: 1 });
+    tl.to("#text", { duration: 1, text: "myne" });
+    masterTl.add(tl);
+  }, []);
+
   return (
     <footer>
       <div className="content-column">
         <div className="col-2">
-          <ALink href="/">
-            <Images src={ImageMyneLogo} width={220} height={80} />
-          </ALink>
+          <div className="logo-text-animated">
+            <ALink href="/">
+              <h2 id="box"></h2>
+              <h2 id="text"></h2>
+              <h2 id="cursor" className="cursor-animated">
+                |
+              </h2>
+            </ALink>
+          </div>
           <div className="social-networks">
             <h6>Follow us</h6>
             {SocialNetworks.map((x, i) => (
