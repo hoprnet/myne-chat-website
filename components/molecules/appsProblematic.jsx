@@ -22,7 +22,7 @@ export const AppsProblematic = ({}) => {
       <div className="content-column">
         {ParagraphsAppsProblematic.map((x, i) => (
           <div className="col-2" key={i}>
-            <x.label>{x.text}</x.label>
+            <x.label className={x.className}>{x.text}</x.label>
           </div>
         ))}
       </div>

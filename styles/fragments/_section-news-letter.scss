@@ -19,3 +19,13 @@
     outline: none;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .section {
+    .container {
+      .news-letter-section {
+        padding-bottom: 50px;
+      }
+    }
+  }
+}

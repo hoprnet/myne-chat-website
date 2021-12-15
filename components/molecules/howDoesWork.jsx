@@ -9,7 +9,7 @@ export const HowDoesWork = ({}) => {
   const refHowDoesWork = useRef();
 
   useEffect(() => {
-    const tl = sectionAnimations(refHowDoesWork, 0, -250);
+    const tl = sectionAnimations(refHowDoesWork, 250, 0);
 
     return () => {
       tl.kill();
@@ -27,18 +27,18 @@ export const HowDoesWork = ({}) => {
         />
       </div>
       <div>
-        <ul className="content-column">
+        <div className="content-column">
           {ParagraphHowDoesWork.map((x, i) => (
-            <li key={i} className="col-2">
-              <x.label>{x.text}</x.label>
+            <div key={i} className="col-2">
+              <x.label className={x.className}>{x.text}</x.label>
               {i === 1 ? (
                 <ALink href="https://hoprnet.org/es" target="_blank">
                   <p>HOPRnet.org</p>
                 </ALink>
               ) : null}
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
     </div>
   );

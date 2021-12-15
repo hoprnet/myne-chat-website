@@ -88,4 +88,17 @@ body {
   .background-gray-dark {
     background-color: $grey_dark;
   }
+
+  .only-desktop-view {
+    display: none !important;
+    @media (min-width: 767px) {
+      display: block !important;
+    }
+  }
+
+  .only-mobile-view {
+    @media (min-width: 767px) {
+      display: none !important;
+    }
+  }
 }

@@ -1,4 +1,3 @@
-
 .section.video {
   height: 100vh;
   overflow: hidden;
@@ -37,5 +36,11 @@
     bottom: 0;
     position: absolute;
     right: 0;
+  }
+
+  .install-button {
+    bottom: 23%;
+    position: absolute;
+    right: 74%;
   }
 }

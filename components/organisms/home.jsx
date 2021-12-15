@@ -21,17 +21,28 @@ const Home = ({}) => {
           title="What makes other chat apps problematic?"
           x={-250}
           y={0}
+          className="title-apps-problematic"
         />
         <AppsProblematic />
       </Sections>
 
       <Sections className="align-item-right">
-        <SectionTitles title="What does myne improve?" x={0} y={-250} />
+        <SectionTitles
+          title="What does myne improve?"
+          x={-250}
+          y={0}
+          className="title-myne-improve"
+        />
         <MyneImprove />
       </Sections>
 
       <Sections className="align-item-right">
-        <SectionTitles title="But how does it work?" x={250} y={0} />
+        <SectionTitles
+          title="But how does it work?"
+          x={-250}
+          y={0}
+          className="title-how-does"
+        />
         <HowDoesWork />
       </Sections>
 
@@ -40,7 +51,12 @@ const Home = ({}) => {
       </Sections>
 
       <Sections className="background-gray">
-        <SectionTitles title="Newsletter" x={-250} y={0} />
+        <SectionTitles
+          title="Newsletter"
+          x={-250}
+          y={0}
+          className="title-news-letter"
+        />
         <NewsLetter />
       </Sections>
 

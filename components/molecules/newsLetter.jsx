@@ -5,7 +5,7 @@ export const NewsLetter = ({}) => {
   const refNewsLetter = useRef();
 
   useEffect(() => {
-    const tl = sectionAnimations(refNewsLetter, -250, -150);
+    const tl = sectionAnimations(refNewsLetter, 250, 0);
 
     return () => {
       tl.kill();

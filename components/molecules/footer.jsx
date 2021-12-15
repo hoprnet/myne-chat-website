@@ -16,17 +16,24 @@ export const Footer = ({}) => {
             <h6>Follow us</h6>
             {SocialNetworks.map((x, i) => (
               <ALink href={x.href} key={i} target="_blank">
-                <Images src={x.img} width={50} height={50}/>
+                <Images src={x.img} width={50} height={50} />
               </ALink>
             ))}
           </div>
-          <PElement>&copy;2021 myne</PElement>
-          <PElement>The myne app is developed by the HOPR Association</PElement>
+          <div className="only-desktop-view">
+            <PElement>&copy;2021 myne</PElement>
+            <div className="hopr-association">
+              <PElement>The myne app is developed by the </PElement>
+              <ALink href="https://hoprnet.org/es" target="_blank">
+                <PElement>HOPR Association</PElement>
+              </ALink>
+            </div>
+          </div>
         </div>
 
-        <div className="col-2 second-line-footer">
+        <div className="col-2 content-column">
           {ParagraphsFooter.map((x, i) => (
-            <div key={i} className="second-line-elements">
+            <div key={i} className="col-3">
               <h6>{x.title}</h6>
               {x.descriptions.map((des, j) => (
                 <div key={j} className={des.email && "emails"}>
@@ -39,6 +46,15 @@ export const Footer = ({}) => {
               ))}
             </div>
           ))}
+        </div>
+        <div className="only-mobile-view">
+          <PElement className="myne-year">&copy;2021 myne</PElement>
+          <div className="hopr-association">
+            <PElement>The myne app is developed by the </PElement>
+            <ALink href="https://hoprnet.org/es" target="_blank">
+              <PElement>HOPR Association</PElement>
+            </ALink>
+          </div>
         </div>
       </div>
     </footer>

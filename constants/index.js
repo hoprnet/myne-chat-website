@@ -2,6 +2,7 @@ export const ParagraphsAppsProblematic = [
   {
     text: "Own your privacy, make an essential part of your life finally secure",
     label: "h3",
+    className: "title-element-problematic",
   },
   {
     text:
@@ -9,6 +10,7 @@ export const ParagraphsAppsProblematic = [
       "is became less and less protected in the recent years. We pay with our data, and are " +
       "being spyed upon for various reasons. myne was developped to reclaim back this privilegue",
     label: "p",
+    className: "",
   },
 ];
 
@@ -16,6 +18,7 @@ export const ParagraphsMyneImprove = [
   {
     text: "A lot! End-to-end, mixnext, privacy...",
     label: "h3",
+    className: "title-element-myne-improve",
   },
   {
     text:
@@ -23,6 +26,7 @@ export const ParagraphsMyneImprove = [
       "networks like Ethereum and IPFS. Anyone can build and publish open APIs, called " +
       "subgraphs, making data easily accessible",
     label: "p",
+    className: "",
   },
 ];
 
@@ -51,23 +55,25 @@ export const ParagraphHowDoesWork = [
   {
     text: "Quick answer: myne is the first dApp using the Hopr-protocol.",
     label: "h3",
+    className: "title-apps-how-does-work",
   },
   {
     text:
       "myne is an indexing protocol for querying networks like Ethereum and IPFS, called subgraphs, " +
       "making data easily accesible",
     label: "p",
+    className: "",
   },
 ];
 
 export const SocialNetworks = [
   {
     img: "/assets/icons/twitter.svg",
-    href: "/",
+    href: "https://twitter.com/hoprnet",
   },
   {
     img: "/assets/icons/github.svg",
-    href: "/",
+    href: "https://github.com/hoprnet",
   },
 ];
 
