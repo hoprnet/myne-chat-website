@@ -8,7 +8,7 @@ import imageHoprPrivacy from "../../public/assets/images/hopr_privacy.png";
 export const VideoHopr = ({}) => {
   return (
     <div className="aux-container">
-      <h2>Chat. Finally secure</h2>
+      <h2 className="title-video">Chat. Finally secure</h2>
       <button type="button" className="install-button">
         <FontAwesomeIcon icon={faArrowDown} /> Install myne v0.13
       </button>
