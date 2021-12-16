@@ -1,0 +1,35 @@
+.myne-improve {
+  text-align: center;
+  margin-top: 10px;
+
+  img {
+    display: inline-block !important;
+    width: auto !important;
+  }
+
+  .col-3 {
+    background-color: $grey_light;
+    border-radius: 10px;
+    padding: 10px 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section {
+    .container {
+      .col-2 {
+        .title-element-myne-improve {
+          padding-bottom: 25px;
+        }
+      }
+
+      .title-myne-improve,
+      .col-3 {
+        padding-bottom: 25px;
+      }
+      .img-myne-improve {
+        padding: 25px 0px 50px !important;
+      }
+    }
+  }
+}

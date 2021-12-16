@@ -1,0 +1,35 @@
+.how-does-work {
+  position: relative;
+  .image-hopr {
+    background-color: $bright_blue;
+    display: flex;
+    height: 195px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .col-2 {
+    a {
+      color: $button_shadow;
+      p {
+        color: $button_shadow;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section {
+    .container {
+      .col-2 {
+        .title-apps-how-does-work {
+          padding: 25px 0px;
+        }
+      }
+
+      .title-how-does {
+        padding: 50px 0px;
+      }
+    }
+  }
+}

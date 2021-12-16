@@ -1,0 +1,31 @@
+.news-letter-section {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%;
+  padding: 2px;
+
+  input {
+    border: none;
+    flex-grow: 2;
+    height: 68px;
+    text-align: center;
+  }
+
+  button {
+    width: 20%;
+  }
+
+  input:focus {
+    outline: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section {
+    .container {
+      .news-letter-section {
+        padding-bottom: 50px;
+      }
+    }
+  }
+}

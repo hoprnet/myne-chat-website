@@ -1,0 +1,23 @@
+.section-download-myne {
+  align-self: flex-end;
+  margin-top: 3%;
+  width: 75%;
+
+  button {
+    height: 58px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section {
+    .container {
+      .title-bottom {
+        padding-bottom: 25px;
+      }
+
+      .col-2-aux {
+        width: 48%;
+      }
+    }
+  }
+}

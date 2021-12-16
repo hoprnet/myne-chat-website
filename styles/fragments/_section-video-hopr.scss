@@ -1,0 +1,50 @@
+.section.video {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+
+  .background-video {
+    bottom: 0;
+    height: 100vh;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    z-index: -1;
+  }
+
+  h2 {
+    position: relative;
+    text-align: left;
+    margin: 0.5em 0 1em 0;
+    z-index: 1;
+  }
+
+  button {
+    position: relative;
+    z-index: 1;
+  }
+
+  img {
+    z-index: 1;
+  }
+
+  .bottom-image {
+    background-color: $bright_blue;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+  }
+
+  .install-button {
+    bottom: 17%;
+    position: absolute;
+  }
+
+  .title-video {
+    bottom: 22%;
+    position: absolute;
+  }
+}
