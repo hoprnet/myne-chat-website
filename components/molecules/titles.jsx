@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-export const SectionTitles = ({ title, x, y, className}) => {
+export const SectionTitles = ({ title, x, y, className }) => {
   const refTitle = useRef();
 
   useEffect(() => {
@@ -11,7 +11,9 @@ export const SectionTitles = ({ title, x, y, className}) => {
       scrollTrigger: {
         trigger: refTitle.current,
         start: "top center",
+        end: "+=100",
         toggleActions: "play none none reverse",
+        once: true,
       },
     });
 
