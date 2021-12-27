@@ -23,7 +23,7 @@ export const DownloadMyne = ({}) => {
         <div className="content-column">
           <div className="col-2 col-2-aux">
             <button>
-              <FontAwesomeIcon icon={faArrowDown} /> Install myne v0.13
+              <FontAwesomeIcon icon={faArrowDown} /> Launch myne 0.2
             </button>
           </div>
 
