@@ -2,7 +2,7 @@ import Images from "../atoms/images";
 import ImageHoprChat from "../../public/assets/images/seg02.png";
 import { ParagraphsMyneImprove, Paragraphs2MyneImprove } from "../../constants";
 import { useEffect, useRef } from "react";
-import { sectionAnimations } from "../../utils/animation";
+import { sectionAnimations } from "../../utils/gsapAnimations";
 
 export const MyneImprove = ({}) => {
   const refMyneImprove = useRef();
