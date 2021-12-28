@@ -14,7 +14,7 @@ export const MyneImprove = ({}) => {
       tl.kill();
     };
   }, [refMyneImprove]);
-  
+
   return (
     <div className="background-white sub-section" ref={refMyneImprove}>
       <div className="content-column">
@@ -24,7 +24,14 @@ export const MyneImprove = ({}) => {
           </div>
         ))}
       </div>
-      <Images src={ImageHoprChat} width={828} height={546} className="img-myne-improve"/>
+      <div className="img-myne-improve-container">
+        <Images
+          src={ImageHoprChat}
+          width={828}
+          height={546}
+          className="img-myne-improve"
+        />
+      </div>
       <div className="content-column myne-improve">
         {Paragraphs2MyneImprove.map((x, i) => (
           <div key={i} className="col-3">
