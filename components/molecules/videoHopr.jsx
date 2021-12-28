@@ -50,7 +50,7 @@ export const VideoHopr = ({}) => {
       </div>
       <h2 className="title-video">Chat. Finally secure</h2>
       <button type="button" className="install-button">
-        <FontAwesomeIcon icon={faArrowDown} /> Install myne v0.13
+        <FontAwesomeIcon icon={faArrowDown} /> Launch myne 0.2
       </button>
       <div className="bottom-image">
         <Images src={imageHoprPrivacy} width={256} height={138} />
