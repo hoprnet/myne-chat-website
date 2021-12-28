@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { ParagraphsAppsProblematic } from "../../constants";
 import ImageHoprPrivacy from "../../public/assets/images/seg01.png";
-import { sectionAnimations } from "../../utils/animation";
+import { sectionAnimations } from "../../utils/gsapAnimations";
 import Images from "../atoms/images";
 
 export const AppsProblematic = ({}) => {

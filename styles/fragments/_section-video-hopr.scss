@@ -47,4 +47,19 @@
     bottom: 22%;
     position: absolute;
   }
+
+  .video-text-animated {
+    display: flex;
+    margin: 0;
+
+    .cursor-animated {
+      color: $cyan;
+    }
+
+    h2 {
+      font-family: "Maven Pro", sans-serif;
+      font-size: 90px;
+      margin: 0;
+    }
+  }
 }

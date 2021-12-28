@@ -79,7 +79,7 @@ export const SocialNetworks = [
 
 export const ParagraphsFooter = [
   {
-    title: "Support",
+    title: "",
     descriptions: [
       {
         description: "FAQ",

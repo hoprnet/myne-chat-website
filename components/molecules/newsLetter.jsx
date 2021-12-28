@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { sectionAnimations } from "../../utils/animation";
+import { sectionAnimations } from "../../utils/gsapAnimations";
 
 export const NewsLetter = ({}) => {
   const refNewsLetter = useRef();

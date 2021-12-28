@@ -21,7 +21,7 @@ const Home = ({}) => {
           title="What makes other chat apps problematic?"
           x={-250}
           y={0}
-          className="title-apps-problematic"
+          className="title-apps-problematic padding-bottom-titles"
         />
         <AppsProblematic />
       </Sections>
@@ -31,7 +31,7 @@ const Home = ({}) => {
           title="What does myne improve?"
           x={-250}
           y={0}
-          className="title-myne-improve"
+          className="title-myne-improve padding-bottom-titles"
         />
         <MyneImprove />
       </Sections>
@@ -41,7 +41,7 @@ const Home = ({}) => {
           title="But how does it work?"
           x={-250}
           y={0}
-          className="title-how-does"
+          className="title-how-does padding-bottom-titles"
         />
         <HowDoesWork />
       </Sections>
@@ -55,7 +55,7 @@ const Home = ({}) => {
           title="Newsletter"
           x={-250}
           y={0}
-          className="title-news-letter"
+          className="title-news-letter padding-bottom-titles"
         />
         <NewsLetter />
       </Sections>

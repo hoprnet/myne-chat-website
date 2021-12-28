@@ -3,7 +3,7 @@ import ImageHoprPrivacy from "../../public/assets/images/hopr_privacy.png";
 import { ParagraphHowDoesWork } from "../../constants";
 import ALink from "../atoms/a";
 import { useEffect, useRef } from "react";
-import { sectionAnimations } from "../../utils/animation";
+import { sectionAnimations } from "../../utils/gsapAnimations";
 
 export const HowDoesWork = ({}) => {
   const refHowDoesWork = useRef();

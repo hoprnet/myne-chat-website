@@ -1,14 +1,14 @@
 body {
   background-color: $cyan_background;
-  font-family: "Source Code Pro", monospace;
+  font-family: 'Maven Pro', sans-serif;
   font-size: 16px;
   margin: 0;
   padding: 0;
 
   p {
     color: $black;
-    font-size: 1.25em;
-    line-height: 2.1rem;
+    font-size: 1.15em;
+    line-height: 1.85rem;
     margin: 0;
     padding: 0;
   }
@@ -75,6 +75,10 @@ body {
       background-color: $button_active;
       box-shadow: 0px 6px 21px -4px $button_shadow;
     }
+  }
+
+  .padding-bottom-titles {
+    padding-bottom: 25px;
   }
 
   .background-white {
