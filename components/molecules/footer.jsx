@@ -50,7 +50,7 @@ export const Footer = ({}) => {
           </div>
         </div>
 
-        <div className="col-2 content-column">
+        <div className="col-2 content-column right-line-footer">
           {ParagraphsFooter.map((x, i) => (
             <div key={i} className="col-3">
               <h6>{x.title}</h6>
