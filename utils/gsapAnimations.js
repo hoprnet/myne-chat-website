@@ -7,7 +7,9 @@ export const sectionAnimations = (useRef, x, y) => {
     scrollTrigger: {
       trigger: useRef.current,
       start: "top center",
+      end: "+=100",
       toggleActions: "play none none reverse",
+      once: true,
     },
   });
 
