@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useRef } from "react";
-import { sectionAnimations } from "../../utils/animation";
+import { sectionAnimations } from "../../utils/gsapAnimations";
 
 export const DownloadMyne = ({}) => {
   const refDownloadMyne = useRef();
