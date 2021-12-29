@@ -30,7 +30,7 @@ export const Footer = ({}) => {
         </ALink>
       </div>
       <div className="content-column padding-top-aux">
-        <div className="col-2">
+        <div className="col-2 footer-follow-us">
             <h6>Follow us</h6>
             {SocialNetworks.map((x, i) => (
               <ALink href={x.href} key={i} target="_blank">
@@ -55,7 +55,7 @@ export const Footer = ({}) => {
           ))}
         </div>
       </div>
-      <div>
+      <div className="third-row-footer">
         <PElement className="myne-year">&copy;2021 myne</PElement>
         <div className="hopr-association">
           <PElement>The myne app is developed by the </PElement>

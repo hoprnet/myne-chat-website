@@ -62,6 +62,10 @@
 
   .padding-top-aux {
     padding-top: 20px;
+
+    .footer-follow-us {
+      padding-bottom: 50px;
+    }
   }
 
   .hopr-association {
@@ -81,6 +85,9 @@
   @media screen and (max-width: 767px) {
     .col-3 {
       width: 48% !important;
+    }
+    .third-row-footer{
+      padding-top: 25px;
     }
   }
 }
