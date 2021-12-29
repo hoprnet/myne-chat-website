@@ -11,26 +11,23 @@
     width: 100% !important;
   }
 
-  .social-networks {
-    padding: 25px 0px 50px;
-  }
-
-  .hopr-association {
-    p {
-      display: inline;
-      margin: 0
-    }
+  .logo-text-animated {
     a {
-      p {
+      display: flex;
+      margin: 0;
+      text-decoration: none;
+
+      .cursor-animated {
         color: $cyan;
-        text-decoration-thickness: 1px !important;
-        text-decoration: underline;
+        text-shadow: $cyan 0 0 35px;
+      }
+
+      h2 {
+        font-family: "Maven Pro", sans-serif;
+        font-size: 90px;
+        margin: 0;
       }
     }
-  }
-
-  .right-line-footer{
-    margin-top: 65px;
   }
 
   .content-column {
@@ -57,24 +54,26 @@
         text-decoration: underline;
       }
     }
+  }
 
-    .col-2 {
-      .logo-text-animated {
-        a {
-          display: flex;
-          margin: 0;
+  .second-row-footer {
+    align-items: flex-start !important;
+  }
 
-          .cursor-animated {
-            color: $cyan;
-            text-shadow: $cyan 0 0 35px;
-          }
-        }
-      }
+  .padding-top-aux {
+    padding-top: 20px;
+  }
 
-      h2 {
-        font-family: "Maven Pro", sans-serif;
-        font-size: 90px;
-        margin: 0;
+  .hopr-association {
+    p {
+      display: inline;
+      margin: 0;
+    }
+    a {
+      p {
+        color: $cyan;
+        text-decoration-thickness: 1px !important;
+        text-decoration: underline;
       }
     }
   }
@@ -82,9 +81,6 @@
   @media screen and (max-width: 767px) {
     .col-3 {
       width: 48% !important;
-    }
-    .only-mobile-view {
-      padding-top: 25px;
     }
   }
 }
