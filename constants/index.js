@@ -92,7 +92,7 @@ export const ParagraphsFooter = [
     ],
   },
   {
-    title: "Policies",
+    title: "POLICIES",
     descriptions: [
       {
         description: "Data Policy",
@@ -109,7 +109,7 @@ export const ParagraphsFooter = [
     ],
   },
   {
-    title: "Contact",
+    title: "CONTACT",
     descriptions: [
       {
         email: "contact@myne.chat",

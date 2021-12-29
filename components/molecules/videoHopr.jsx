@@ -1,33 +1,20 @@
-import Videos from "../atoms/videos";
-import Images from "../atoms/images";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
-
-import imageHoprPrivacy from "../../public/assets/images/hopr_privacy.png";
-import { useEffect, useState } from "react";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { gsap } from "gsap/dist/gsap";
 import TextPlugin from "gsap/dist/TextPlugin";
+import { useEffect } from "react";
+import imageHoprPrivacy from "../../public/assets/images/hopr_privacy.png";
+import { useWindowSize } from "../../utils/eventsListener";
 import { TypeWriterAnimation } from "../../utils/gsapAnimations";
+import Images from "../atoms/images";
+import Videos from "../atoms/videos";
+
 gsap.registerPlugin(TextPlugin);
 
 const words = ["decentralized", "private", "resilient", "myne"];
 
 export const VideoHopr = ({}) => {
-  const [videoMobile, setVideoMobile] = useState(false);
-  const [videoTablet, setVideoTablet] = useState(false);
-
-  const setDeviceType = () => {
-    if (window.innerWidth <= 480) {
-      setVideoMobile(true);
-    } else if (window.innerWidth <= 768) {
-      setVideoTablet(true);
-    }
-  };
-
-  useEffect(() => {
-    setDeviceType();
-  }, []);
+  const windowSize = useWindowSize();
 
   useEffect(() => {
     let masterTl = TypeWriterAnimation("#cursor-video", "#box-video");
@@ -56,7 +43,7 @@ export const VideoHopr = ({}) => {
         <Images src={imageHoprPrivacy} width={256} height={138} />
       </div>
 
-      {videoMobile ? (
+      {windowSize.width <= 480 && windowSize.orientation === "portrait" ? (
         <Videos
           videoType="video/mp4"
           controls={false}
@@ -66,7 +53,7 @@ export const VideoHopr = ({}) => {
           className="background-video"
           src={require("../../public/assets/videos/myne-mobile.mp4")}
         />
-      ) : videoTablet ? (
+      ) : windowSize.width <= 768 && windowSize.orientation === "portrait" ? (
         <Videos
           videoType="video/mp4"
           controls={false}
