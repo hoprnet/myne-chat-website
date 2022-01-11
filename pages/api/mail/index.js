@@ -1,7 +1,26 @@
 import nodemailer from "nodemailer";
 require("dotenv").config();
 
-export default (req, res) => {
+const wrapperSendMail = async (options) =>
+  new Promise((resolve, _) => {
+    let oTransporter = nodemailer.createTransport(options.config),
+      response = {
+        sent: false,
+      };
+
+    oTransporter.sendMail(options.message, async (err, info) => {
+      if (err) {
+        response.error = err.message || err;
+      } else {
+        response.sent = true;
+        response.message_id = info.messageId || info.response;
+      }
+
+      resolve(response);
+    });
+  });
+
+const apiMail = async (req, res) => {
   let oConfig = {
       pool: true,
       host: process.env.EMAIL_HOST,
@@ -16,33 +35,23 @@ export default (req, res) => {
     oMessage = {
       from: `${oConfig.auth.name} <${oConfig.auth.user}>`,
       to: req.body.email,
-      subject: "Prueba",
+      subject: "New mail for newsletter",
       headers: {
         contentType: "text/html",
         charset: "UTF-8",
       },
     };
 
-  const transporter = nodemailer.createTransport(oConfig);
-
-  let code = 0;
-
-  transporter.sendMail(oMessage, (err, info) => {
-    try {
-      if (err) {
-        console.log("Error", err);
-        code = 400;
-      } else {
-        code = 200;
-      }
-    } catch (error) {
-      code = 400;
-    }
+  const responseTransporter = await wrapperSendMail({
+    config: oConfig,
+    message: oMessage,
   });
 
-  if (code === 400) {
-    res.status(400).json({ message: "No se pudo enviar el email" });
+  if (!responseTransporter.sent) {
+    res.status(400).json({ message: responseTransporter.error });
   } else {
-    res.status(200).json({ message: "Email enviado" });
+    res.status(200).json({ message: "Email sent" });
   }
 };
+
+export default apiMail;
