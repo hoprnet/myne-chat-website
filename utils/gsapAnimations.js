@@ -7,9 +7,10 @@ export const sectionAnimations = (useRef, x, y) => {
     scrollTrigger: {
       trigger: useRef.current,
       start: "top center",
-      end: "+=100",
+      end: "+=20",
       toggleActions: "play none none reverse",
       once: true,
+      markers: true
     },
   });
 
@@ -19,6 +20,7 @@ export const sectionAnimations = (useRef, x, y) => {
     ease: "power1.inOut",
     x: x,
     y: y,
+    marker: true
   });
 
   return tl;

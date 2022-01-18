@@ -24,8 +24,8 @@ export const VideoHopr = ({}) => {
       tl.to("#text-video", {
         duration: 1,
         text: word,
-        fontFamily: word === "myne" ? "myne Regular" : "",
-        fontSize: word === "myne" ? "150px" : ""
+        fontFamily: word === "myne" ? 'myne regular' : "",
+        className: word === "myne" ? "font-size-mine" : "",
       });
       masterTl.add(tl);
     });
