@@ -21,7 +21,12 @@ export const VideoHopr = ({}) => {
 
     words.forEach((word) => {
       let tl = gsap.timeline({ repeat: 1.5, yoyo: true, repeatDelay: 1 });
-      tl.to("#text-video", { duration: 1, text: word });
+      tl.to("#text-video", {
+        duration: 1,
+        text: word,
+        fontFamily: word === "myne" ? "myne Regular" : "",
+        fontSize: word === "myne" ? "150px" : ""
+      });
       masterTl.add(tl);
     });
   }, []);
@@ -30,7 +35,7 @@ export const VideoHopr = ({}) => {
     <div className="aux-container">
       <div className="video-text-animated">
         <h2 id="box-video"></h2>
-        <h2 id="text-video"></h2>
+        <h2 id="text-video" className="font-normal"></h2>
         <h2 id="cursor-video" className="cursor-animated">
           |
         </h2>
