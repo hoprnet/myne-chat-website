@@ -55,15 +55,22 @@
     .cursor-animated {
       color: $cyan;
       text-shadow: $cyan 0 0 35px;
+      font-size: 140px;
     }
+  }
 
+  .h2-myne {
     h2 {
-      font-size: 90px;
+      font-family: 'myne regular';
+      font-size: 150px;
       margin: 0;
     }
+  }
 
-    .font-size-mine{
-      font-size: 150px;
+  .h2-regular {
+    h2 {
+      font-size: 140px;
+      margin: 0;
     }
   }
 }
