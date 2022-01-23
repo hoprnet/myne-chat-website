@@ -11,7 +11,7 @@ import Videos from "../atoms/videos";
 
 gsap.registerPlugin(TextPlugin);
 
-const words = ["decentralized", "private", "resilient", "myne"];
+const words = ["myne", "private", "resilient", "decentralized"];
 
 export const VideoHopr = ({}) => {
   const windowSize = useWindowSize();
@@ -19,16 +19,27 @@ export const VideoHopr = ({}) => {
   useEffect(() => {
     let masterTl = TypeWriterAnimation("#cursor-video", "#box-video");
 
-    words.forEach((word) => {
+    words.forEach((word, i) => {
       let tl = gsap.timeline({ repeat: 1.5, yoyo: true, repeatDelay: 1 });
-      tl.to("#text-video", { duration: 1, text: word });
+      tl.to("#video-text-animated-container", {
+        className:
+          word === "myne"
+            ? "video-text-animated h2-myne"
+            : "video-text-animated h2-regular",
+      });
+
+      tl.to("#text-video", {
+        duration: 1,
+        text: word,
+        fontFamily: word === "myne" ? "myne regular" : "",
+      });
       masterTl.add(tl);
     });
   }, []);
 
   return (
     <div className="aux-container">
-      <div className="video-text-animated">
+      <div id="video-text-animated-container" className="video-text-animated">
         <h2 id="box-video"></h2>
         <h2 id="text-video"></h2>
         <h2 id="cursor-video" className="cursor-animated">
