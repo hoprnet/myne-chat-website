@@ -14,6 +14,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
     "dotenv": "^10.0.0",
+    "framer-motion": "^6.2.3",
     "gsap": "^3.8.0",
     "next": "12.0.1",
     "next-videos": "^1.4.0",
