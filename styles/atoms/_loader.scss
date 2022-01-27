@@ -1,0 +1,25 @@
+.main-loader {
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+
+  .loader-wrapper {
+    background: $grey_light;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    .element {
+      animation: animateLoading 1200ms ease-in-out infinite alternate;
+      background: $blue;
+      border-radius: 100%;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
