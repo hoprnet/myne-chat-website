@@ -17,7 +17,7 @@ export const AppsProblematic = ({}) => {
 
   return (
     <div className="background-white sub-section" ref={refAppProblematic}>
-      <h6>The state of chatting in the early 2020s:</h6>
+      <h6>The state of chat today:</h6>
       <Images src={ImageHoprPrivacy} />
       <div className="content-column">
         {ParagraphsAppsProblematic.map((x, i) => (
