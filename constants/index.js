@@ -82,34 +82,17 @@ export const ParagraphsFooter = [
     title: "",
     descriptions: [
       {
-        description: "FAQ",
-        href: "/faq",
-      },
-      {
         description: "Documentation",
         href: "/documentation",
       },
-    ],
-  },
-  {
-    title: "POLICIES",
-    descriptions: [
       {
-        description: "Data Policy",
+        description: "Privacy Policy",
         href: "/privacy-policy",
       },
-      {
-        description: "Cookie Policy",
-        href: "/cookie-policy",
-      },
-      {
-        description: "Terms of Service",
-        href: "/terms-service",
-      },
     ],
   },
   {
-    title: "CONTACT",
+    title: "",
     descriptions: [
       {
         email: "contact@myne.chat",
@@ -118,10 +101,6 @@ export const ParagraphsFooter = [
       {
         email: "support@myne.chat",
         href: "mailto:support@myne.chat",
-      },
-      {
-        email: "press@myne.chat",
-        href: "mailto:press@myne.chat",
       },
     ],
   },

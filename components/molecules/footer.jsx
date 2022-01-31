@@ -40,7 +40,7 @@ export const Footer = ({}) => {
         </div>
         <div className="col-2 content-column second-row-footer">
           {ParagraphsFooter.map((x, i) => (
-            <div key={i} className="col-3">
+            <div key={i} className="second-row-footer-elements">
               {x.title ? <h6>{x.title}</h6> : null}
               {x.descriptions.map((des, j) => (
                 <div key={j} className={des.email && "emails"}>
@@ -56,11 +56,11 @@ export const Footer = ({}) => {
         </div>
       </div>
       <div className="third-row-footer">
-        <PElement className="myne-year">&copy;2021 myne</PElement>
+        <PElement className="myne-year">&copy;2022 myne</PElement>
         <div className="hopr-association">
           <PElement>The myne app is developed by the </PElement>
           <ALink href="https://hoprnet.org/es" target="_blank">
-            <PElement>HOPR Association</PElement>
+            <PElement>HOPR Association.</PElement>
           </ALink>
         </div>
       </div>

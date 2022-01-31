@@ -11,6 +11,7 @@
 @import 'commons/config';
 @import 'commons/sections';
 @import 'commons/animations';
+@import 'commons/loader';
 
 //Fragments
 @import 'fragments/section-video-hopr';
@@ -24,5 +25,4 @@
 @import 'fragments/section-download-myne';
 @import 'fragments/section-myne-improve';
 
-//Atoms
-@import 'atoms/loader';
+
