@@ -87,7 +87,7 @@ export const ParagraphsFooter = [
       },
       {
         description: "Documentation",
-        href: "/documentation",
+        href: "https://docs.hoprnet.org/dapps/myne-chat",
       },
     ],
   },
