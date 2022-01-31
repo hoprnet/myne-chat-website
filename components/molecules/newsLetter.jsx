@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import { sectionAnimations } from "../../utils/gsapAnimations";
-import { MiddlewareSendMail } from "../../utils/middleware-mail";
 import { useToasts } from "react-toast-notifications";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Oval from "react-loader-spinner/dist/loader/Oval";
@@ -29,24 +28,14 @@ export const NewsLetter = ({}) => {
 
     setLoading(true);
 
-    const res = await MiddlewareSendMail(email);
-
-    if (res === "error-mail-time") {
-      addToast("You must wait two minutes to send an email again", {
-        appearance: "warning",
-        autoDismiss: true,
-      });
-    } else if (res.status !== 200) {
-      addToast("An error occurred sending the mail", {
-        appearance: "warning",
-        autoDismiss: true,
-      });
-    } else {
-      addToast("Email sent", {
-        appearance: "success",
-        autoDismiss: true,
-      });
-    }
+    const response = await fetch("/api/mail", {
+      method: "POST",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email }),
+    });
 
     setLoading(false);
   };
