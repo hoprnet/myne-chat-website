@@ -61,9 +61,13 @@
 
   .h2-myne {
     h2 {
-      font-family: 'myne regular';
-      font-size: 150px;
+      font-family: "myne regular";
+      font-size: 200px;
       margin: 0;
+    }
+
+    .cursor-animated {
+      font-size: 200px;
     }
   }
 
@@ -71,6 +75,36 @@
     h2 {
       font-size: 140px;
       margin: 0;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .video-text-animated {
+      .cursor-animated {
+        font-size: 100px;
+      }
+    }
+
+    .h2-myne {
+      h2 {
+        font-family: "myne regular";
+        font-size: 100px;
+        margin: 0;
+      }
+
+      .cursor-animated {
+        font-size: 110px;
+      }
+    }
+
+    .h2-regular {
+      h2 {
+        font-size: 80px;
+        margin: 0;
+      }
+      .cursor-animated {
+        font-size: 80px !important;
+      }
     }
   }
 }

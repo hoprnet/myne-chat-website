@@ -20,7 +20,7 @@ export const VideoHopr = ({}) => {
     let masterTl = TypeWriterAnimation("#cursor-video", "#box-video");
 
     words.forEach((word, i) => {
-      let tl = gsap.timeline({ repeat: 1.5, yoyo: true, repeatDelay: 1 });
+      let tl = gsap.timeline({ repeat: 1, yoyo: true, repeatDelay: 1 });
       tl.to("#video-text-animated-container", {
         className:
           word === "myne"
