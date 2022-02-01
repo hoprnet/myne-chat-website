@@ -1,14 +1,16 @@
+import React from 'react'
+
 export const ParagraphsAppsProblematic = [
   {
-    text: "Own your privacy, make an essential part of your life finally secure",
+    text: "Own your privacy, make this essential part of your life secure at last",
     label: "h3",
     className: "title-element-problematic",
   },
   {
     text:
-      "Chat conversations ought to be private, it's in their nature. While at the same this " +
-      "is became less and less protected in the recent years. We pay with our data, and are " +
-      "being spyed upon for various reasons. myne was developped to reclaim back this privilegue",
+      "Chat should be private. But it isn’t. Your identity is exposed, along with your data and metadata. " +
+      "End-to-end encryption and even VPNs aren’t enough. myne makes chat private, and pays you " +
+      "for making the internet more secure.",
     label: "p",
     className: "",
   },
@@ -22,9 +24,9 @@ export const ParagraphsMyneImprove = [
   },
   {
     text:
-      "Because we care about your privacy! myne is an indexing protocol for querying " +
-      "networks like Ethereum and IPFS. Anyone can build and publish open APIs, called " +
-      "subgraphs, making data easily accessible",
+      "Messages sent through myne are only visible to you and the recipient, " +
+      "and no-one can tell who you’re chatting with, how much you’re chatting, or when. " +
+      "It’s impossible to build the web3 future without protecting this valuable metadata.",
     label: "p",
     className: "",
   },
@@ -38,29 +40,27 @@ export const Paragraphs2MyneImprove = [
     height: 63.75,
   },
   {
-    title: "SUPPORT ONLINE PRIVACY",
-    text: "The technology that powers myne can make any kind of data exchange private. Be part of the future of the internet!.",
-    img: "/assets/images/myne_improve_02.png",
-    height: 61.88,
-  },
-  {
     title: "EARN CRYPTO",
     text: "myne is powered by HOPR, a fully incentivized private mixnet that rewards you for using it. Earn crypto while you chat.",
     img: "/assets/images/myne_improve_03.png",
     height: 105,
   },
+  {
+    title: "SUPPORT ONLINE PRIVACY",
+    text: "The technology that powers myne can make any kind of data exchange private. Be part of the future of the internet!.",
+    img: "/assets/images/myne_improve_02.png",
+    height: 61.88,
+  },
 ];
 
 export const ParagraphHowDoesWork = [
   {
-    text: "Quick answer: myne is the first dApp using the Hopr-protocol.",
+    text: "In short: myne uses HOPR technology to protect both your data and metadata.",
     label: "h3",
     className: "title-apps-how-does-work",
   },
   {
-    text:
-      "myne is an indexing protocol for querying networks like Ethereum and IPFS, called subgraphs, " +
-      "making data easily accesible",
+    text: "HOPR’s proof of relay mechanism is the first protocol to solve the problem of how to reward everyone fairly in a private mixnet while allowing it to scale to address the needs of a global internet.",
     label: "p",
     className: "",
   },
@@ -83,7 +83,7 @@ export const ParagraphsFooter = [
     descriptions: [
       {
         description: "Documentation",
-        href: "/documentation",
+        href: "https://docs.hoprnet.org/dapps/myne-chat",
       },
       {
         description: "Privacy Policy",
