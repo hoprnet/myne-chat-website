@@ -37,6 +37,18 @@ export const NewsLetter = ({}) => {
       body: JSON.stringify({ email }),
     });
 
+    if(response.status === 200){
+      addToast("Member suscribed", {
+        appearance: "success",
+        autoDismiss: true,
+      });
+    }else{
+      addToast("Error to suscribe newsletter", {
+        appearance: "warning",
+        autoDismiss: true,
+      });
+    }
+
     setLoading(false);
   };
 
@@ -58,3 +70,7 @@ export const NewsLetter = ({}) => {
     </div>
   );
 };
+
+export async function getServerSideProps() {
+  
+}
