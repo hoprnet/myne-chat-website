@@ -2,3 +2,9 @@
   align-items: center;
   display: flex;
 }
+
+@media screen and (max-width: 420px) {
+  .logo {
+    flex-direction: column;
+  }
+}
