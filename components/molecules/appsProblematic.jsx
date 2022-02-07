@@ -16,7 +16,7 @@ export const AppsProblematic = ({}) => {
   }, [refAppProblematic]);
 
   return (
-    <div className="background-white sub-section" ref={refAppProblematic}>
+    <div className="background-white sub-section app-problematic" ref={refAppProblematic}>
       <h6>The state of chat today:</h6>
       <Images src={ImageHoprPrivacy} />
       <div className="content-column">

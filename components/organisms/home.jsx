@@ -31,7 +31,7 @@ const Home = ({}) => {
           title="What does myne fix?"
           x={-250}
           y={0}
-          className="title-myne-improve padding-bottom-titles"
+          className="title-myne-improve"
         />
         <MyneImprove />
       </Sections>
@@ -41,7 +41,7 @@ const Home = ({}) => {
           title="But how does it work?"
           x={-250}
           y={0}
-          className="title-how-does padding-bottom-titles"
+          className="title-how-does"
         />
         <HowDoesWork />
       </Sections>

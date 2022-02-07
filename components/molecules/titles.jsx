@@ -31,7 +31,7 @@ export const SectionTitles = ({ title, x, y, className }) => {
   }, []);
 
   return (
-    <div ref={refTitle} className={className}>
+    <div ref={refTitle} className={`titles${className && (' ' + className)}`}>
       <h3>{title}</h3>
     </div>
   );
