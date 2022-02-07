@@ -95,12 +95,8 @@ export const ParagraphsFooter = [
     title: "",
     descriptions: [
       {
-        email: "contact@myne.chat",
-        href: "mailto:contact@myne.chat",
-      },
-      {
-        email: "support@myne.chat",
-        href: "mailto:support@myne.chat",
+        email: "hello@myne.chat",
+        href: "mailto:hello@myne.chat",
       },
     ],
   },
