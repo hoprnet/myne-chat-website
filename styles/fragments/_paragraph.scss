@@ -1,17 +1,23 @@
 .paragraph {
   background-color: $white;
+  padding: 20px 35px 0px 35px;
   text-align: left;
-  height: 800px;
-  
   padding: 50px 35px 0px 35px;
 
   h3 {
     font-size: 1.5rem;
     font-weight: 400;
+    font-weight: 800;
+    margin-bottom: 5px;
   }
 
   p {
     font-size: 1.25em;
     font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  .sub-paragrahp {
+    margin-left: 50px;
   }
 }
