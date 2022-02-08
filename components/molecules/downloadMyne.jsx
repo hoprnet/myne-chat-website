@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useRef } from "react";
 import { sectionAnimations } from "../../utils/gsapAnimations";
+import ALink from "../atoms/a";
 
 export const DownloadMyne = ({}) => {
   const refDownloadMyne = useRef();
@@ -13,7 +14,6 @@ export const DownloadMyne = ({}) => {
       tl.kill();
     };
   }, [refDownloadMyne]);
-
 
   return (
     <div ref={refDownloadMyne}>
@@ -28,7 +28,11 @@ export const DownloadMyne = ({}) => {
           </div>
 
           <div className="col-2 col-2-aux">
-            <button>Documentation</button>
+            <ALink
+              href="https://docs.hoprnet.org/dapps/myne-chat"
+            >
+              <button>Documentation</button>
+            </ALink>
           </div>
         </div>
       </div>

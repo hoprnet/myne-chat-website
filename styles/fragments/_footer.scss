@@ -80,8 +80,12 @@
     }
   }
 
+  .second-row-footer-elements {
+    width: 48% !important;
+  }
+
   @media screen and (max-width: 767px) {
-    .col-3 {
+    .second-row-footer-elements {
       width: 48% !important;
     }
     .third-row-footer{

@@ -18,7 +18,7 @@ const Home = ({}) => {
 
       <Sections className="align-item-right">
         <SectionTitles
-          title="What makes other chat apps problematic?"
+          title="What’s wrong with other chat apps?"
           x={-250}
           y={0}
           className="title-apps-problematic padding-bottom-titles"
@@ -28,7 +28,7 @@ const Home = ({}) => {
 
       <Sections className="align-item-right">
         <SectionTitles
-          title="What does myne improve?"
+          title="What does myne fix?"
           x={-250}
           y={0}
           className="title-myne-improve padding-bottom-titles"

@@ -1,7 +1,10 @@
 .logo {
-  h3 {
-    left: 30%;
-    position: absolute;
-    top: 6%;
+  align-items: center;
+  display: flex;
+}
+
+@media screen and (max-width: 420px) {
+  .logo {
+    flex-direction: column;
   }
 }
