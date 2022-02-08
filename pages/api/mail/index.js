@@ -26,9 +26,15 @@ const apiMail = async (req, res) => {
       },
     });
 
-    res.status(200).json({ message: "ok" });
+    res.status(200).json({ message: "ok", status: 200 });
   } catch (error) {
-    res.status(400).json({ message: error.message });
+    const status = error?.response?.body?.status || 400;
+    res.status(status).json({
+      message:
+        error?.response?.body?.title ||
+        "Unexpected error has occurred check with administrator",
+      status,
+    });
   }
 };
 

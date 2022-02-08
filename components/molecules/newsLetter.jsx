@@ -28,28 +28,30 @@ export const NewsLetter = ({}) => {
 
     setLoading(true);
 
-    const response = await fetch("/api/mail", {
+    await fetch("/api/mail", {
       method: "POST",
       headers: {
         Accept: "application/json, text/plain, */*",
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ email }),
-    });
+    })
+      .then((res) => res.json())
+      .then((res) => {
+        if (res.status === 200) {
+          addToast("Member suscribed", {
+            appearance: "success",
+            autoDismiss: true,
+          });
+        } else {
+          addToast(res.message, {
+            appearance: "warning",
+            autoDismiss: true,
+          });
+        }
 
-    if(response.status === 200){
-      addToast("Member suscribed", {
-        appearance: "success",
-        autoDismiss: true,
+        setLoading(false);
       });
-    }else{
-      addToast("Error to suscribe newsletter", {
-        appearance: "warning",
-        autoDismiss: true,
-      });
-    }
-
-    setLoading(false);
   };
 
   return (
@@ -71,6 +73,4 @@ export const NewsLetter = ({}) => {
   );
 };
 
-export async function getServerSideProps() {
-  
-}
+export async function getServerSideProps() {}
