@@ -102,8 +102,11 @@ export const ParagraphsFooter = [
   },
 ];
 
-export const PrivacyPolicyPragraph = `Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-  Officia doloribus aut fugiat rerum est sequi maiores dolores quae inventore. Rem.`;
+export const PrivacyPolicyPragraph = [
+  {
+    text: "We are committed to protecting your privacy."
+  }
+]
 
 export const TermsServicePragraph = `
 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, architecto iure? Officia culpa vel fuga blanditiis aspernatur
