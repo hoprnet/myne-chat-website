@@ -1,56 +1,40 @@
-import nodemailer from "nodemailer";
+import mailchimp from "@mailchimp/mailchimp_marketing";
 require("dotenv").config();
 
-const wrapperSendMail = async (options) =>
-  new Promise((resolve, _) => {
-    let oTransporter = nodemailer.createTransport(options.config),
-      response = {
-        sent: false,
-      };
+mailchimp.setConfig({
+  apiKey: process.env.API_KEY,
+  server: process.env.SERVER_PREFIX,
+});
 
-    oTransporter.sendMail(options.message, async (err, info) => {
-      if (err) {
-        response.error = err.message || err;
-      } else {
-        response.sent = true;
-        response.message_id = info.messageId || info.response;
-      }
-
-      resolve(response);
-    });
-  });
+const listId = process.env.LIST_ID;
 
 const apiMail = async (req, res) => {
-  let oConfig = {
-      pool: true,
-      host: process.env.EMAIL_HOST,
-      port: parseInt(process.env.EMAIL_PORT || 465, 10),
-      secure: process.env.EMAIL_SECURE === "true",
-      auth: {
-        name: process.env.EMAIL_SEND_NAME,
-        user: process.env.EMAIL_SEND_EMAIL,
-        pass: process.env.EMAIL_SEND_PASSWORD,
-      },
-    },
-    oMessage = {
-      from: `${oConfig.auth.name} <${oConfig.auth.user}>`,
-      to: req.body.email,
-      subject: "New mail for newsletter",
-      headers: {
-        contentType: "text/html",
-        charset: "UTF-8",
-      },
-    };
+  const subscribingUser = {
+    firstName: "",
+    lastName: "",
+    email: req.body.email,
+  };
 
-  const responseTransporter = await wrapperSendMail({
-    config: oConfig,
-    message: oMessage,
-  });
+  let response;
+  try {
+    response = await mailchimp.lists.addListMember(listId, {
+      email_address: subscribingUser.email,
+      status: "subscribed",
+      merge_fields: {
+        FNAME: subscribingUser.firstName,
+        LNAME: subscribingUser.lastName,
+      },
+    });
 
-  if (!responseTransporter.sent) {
-    res.status(400).json({ message: responseTransporter.error });
-  } else {
-    res.status(200).json({ message: "Email sent" });
+    res.status(200).json({ message: "ok", status: 200 });
+  } catch (error) {
+    const status = error?.response?.body?.status || 400;
+    res.status(status).json({
+      message:
+        error?.response?.body?.title ||
+        "Unexpected error has occurred check with administrator",
+      status,
+    });
   }
 };
 
