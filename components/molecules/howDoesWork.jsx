@@ -1,5 +1,5 @@
 import Images from "../atoms/images";
-import ImageHoprPrivacy from "../../public/assets/images/hopr_privacy.png";
+import ImageHoprPrivacy from "../../public/assets/images/hopr_data_privacy.png";
 import { ParagraphHowDoesWork } from "../../constants";
 import ALink from "../atoms/a";
 import { useEffect, useRef } from "react";
@@ -21,8 +21,8 @@ export const HowDoesWork = ({}) => {
       <div className="image-hopr">
         <Images
           src={ImageHoprPrivacy}
-          width={300}
-          height={180}
+          width={130}
+          height={150}
           className="logo"
         />
       </div>

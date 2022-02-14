@@ -4,7 +4,10 @@
     background-color: $bright_blue;
     display: flex;
     justify-content: center;
-    width: 100%;
+
+    img {
+      padding: 10px 0 10px !important;
+    }
   }
 
   .col-2 {
