@@ -32,10 +32,13 @@
   }
 
   .bottom-image {
-    background-color: $bright_blue;
     bottom: 0;
     position: absolute;
     right: 0;
+
+    img {
+      padding: 0 20px 20px !important;
+    }
   }
 
   .install-button {
@@ -83,6 +86,14 @@
       .cursor-animated {
         font-size: 70px;
       }
+    }
+
+    .install-button {
+      bottom: 25%;
+    }
+  
+    .title-video {
+      bottom: 30%;
     }
 
     .h2-myne {

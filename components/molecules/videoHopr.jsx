@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { gsap } from "gsap/dist/gsap";
 import TextPlugin from "gsap/dist/TextPlugin";
 import { useEffect } from "react";
-import imageHoprPrivacy from "../../public/assets/images/hopr_privacy.png";
+import imageHoprPrivacy from "../../public/assets/images/hopr_data_privacy.png";
 import { useWindowSize } from "../../utils/eventsListener";
 import { TypeWriterAnimation } from "../../utils/gsapAnimations";
 import Images from "../atoms/images";
@@ -46,12 +46,14 @@ export const VideoHopr = ({}) => {
           |
         </h2>
       </div>
-      <h2 className="title-video">Chat. Finally secure</h2>
-      <button type="button" className="install-button">
-        <FontAwesomeIcon icon={faArrowDown} /> Launch myne 0.2
-      </button>
+      <div>
+        <h2 className="title-video">Chat. Finally secure</h2>
+        <button type="button" className="install-button">
+          <FontAwesomeIcon icon={faArrowDown} /> Launch myne 0.2
+        </button>
+      </div>
       <div className="bottom-image">
-        <Images src={imageHoprPrivacy} width={256} height={138} />
+        <Images src={imageHoprPrivacy} width={110} height={130} />
       </div>
 
       {windowSize.width <= 480 && windowSize.orientation === "portrait" ? (
