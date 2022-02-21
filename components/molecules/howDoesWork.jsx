@@ -17,7 +17,7 @@ export const HowDoesWork = ({}) => {
   }, [refHowDoesWork]);
 
   return (
-    <div className="background-white sub-section how-does-work" ref={refHowDoesWork}>
+    <div className="background-white sub-section how-does-work padding-sub-section" ref={refHowDoesWork}>
       <div className="image-hopr">
         <Images
           src={ImageHoprPrivacy}
@@ -26,7 +26,7 @@ export const HowDoesWork = ({}) => {
           className="logo"
         />
       </div>
-      <div>
+      <div className="how-does-work-information">
         <div className="content-column">
           {ParagraphHowDoesWork.map((x, i) => (
             <div key={i} className="col-2">
