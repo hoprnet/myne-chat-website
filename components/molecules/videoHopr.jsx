@@ -51,6 +51,9 @@ export const VideoHopr = ({}) => {
         <button type="button" className="install-button">
           <FontAwesomeIcon icon={faArrowDown} /> Launch myne 0.2
         </button>
+        <button type="button" className="install-button left-position">
+          Documentation
+        </button>
       </div>
       <div className="bottom-image">
         <Images src={imageHoprPrivacy} width={110} height={130} />

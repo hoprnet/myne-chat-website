@@ -46,6 +46,10 @@
     position: absolute;
   }
 
+  .left-position {
+    left: 32%;
+  }
+
   .title-video {
     bottom: 22%;
     position: absolute;
@@ -91,6 +95,10 @@
     .install-button {
       bottom: 25%;
     }
+
+    .left-position {
+      left: 40%;
+    }
   
     .title-video {
       bottom: 30%;
@@ -122,4 +130,18 @@
         font-size: 2.1rem;
     }
   }
+
+  @media screen and (max-width: 622px) {
+    .left-position {
+      left: 50%;
+    }
+  }
+
+  @media screen and (max-width: 497px) {
+    .left-position {
+      left: 60%;
+    }
+  }
 }
+
+
