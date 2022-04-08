@@ -58,9 +58,9 @@ export const Footer = ({}) => {
       <div className="third-row-footer">
         <PElement className="myne-year">&copy;2022 myne</PElement>
         <div className="hopr-association">
-          <PElement>The myne app is developed by the </PElement>
+          <PElement>The myne app is developed by </PElement>
           <ALink href="https://hoprnet.org/es" target="_blank">
-            <PElement>HOPR Association.</PElement>
+            <PElement>HOPR.</PElement>
           </ALink>
         </div>
       </div>
