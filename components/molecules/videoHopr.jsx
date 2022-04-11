@@ -48,12 +48,14 @@ export const VideoHopr = ({}) => {
       </div>
       <div>
         <h2 className="title-video">Chat. Finally secure</h2>
-        <button type="button" className="install-button">
-          <FontAwesomeIcon icon={faArrowDown} /> Launch myne 0.1
-        </button>
-        <button type="button" className="install-button left-position">
-          Documentation
-        </button>
+        <div className="video-buttons">
+          <button type="button" className="launch-button">
+            <FontAwesomeIcon icon={faArrowDown} /> Launch myne 0.1
+          </button>
+          <button type="button">
+            Documentation
+          </button>
+        </div>
       </div>
       <div className="bottom-image">
         <Images src={imageHoprPrivacy} width={110} height={130} />
