@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import imageHoprPrivacy from "../../public/assets/images/hopr_data_privacy_blue.png";
 import { useWindowSize } from "../../utils/eventsListener";
 import { TypeWriterAnimation } from "../../utils/gsapAnimations";
+import ALink from "../atoms/a";
 import Images from "../atoms/images";
 import Videos from "../atoms/videos";
 
@@ -50,15 +51,15 @@ export const VideoHopr = ({}) => {
         <h2 className="title-video">Chat. Finally secure</h2>
         <div className="video-buttons">
           <button type="button" className="launch-button">
-            <FontAwesomeIcon icon={faArrowDown} /> Launch myne 0.1
+            <FontAwesomeIcon icon={faArrowDown} /> Launch 0.1 Alpha
           </button>
-          <button type="button">
-            Documentation
-          </button>
+          <button type="button">Documentation</button>
         </div>
       </div>
       <div className="bottom-image">
-        <Images src={imageHoprPrivacy} width={110} height={130} />
+        <ALink href="https://hoprnet.org" target="_blank">
+          <Images src={imageHoprPrivacy} width={110} height={130} />
+        </ALink>
       </div>
 
       {windowSize.width <= 480 && windowSize.orientation === "portrait" ? (
