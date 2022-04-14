@@ -41,15 +41,13 @@
     }
   }
 
-  .install-button {
+  .video-buttons {
     bottom: 17%;
-    color: $white;
-    font-weight: 400;
     position: absolute;
-  }
 
-  .left-position {
-    left: 32%;
+    button {
+      margin: 0px 10px;
+    }
   }
 
   .title-video {
@@ -94,14 +92,12 @@
       }
     }
 
-    .install-button {
-      bottom: 25%;
+    .video-buttons {
+      .launch-button {
+        margin-bottom: 8px;
+      }
     }
 
-    .left-position {
-      left: 40%;
-    }
-  
     .title-video {
       bottom: 30%;
     }
@@ -128,22 +124,9 @@
       }
     }
 
-      .title-video {
-        font-size: 2.1rem;
+    .title-video {
+      font-size: 2.1rem;
     }
   }
 
-  @media screen and (max-width: 622px) {
-    .left-position {
-      left: 50%;
-    }
-  }
-
-  @media screen and (max-width: 497px) {
-    .left-position {
-      left: 60%;
-    }
-  }
 }
-
-
