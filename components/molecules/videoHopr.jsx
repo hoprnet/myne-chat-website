@@ -48,7 +48,7 @@ export const VideoHopr = ({}) => {
         </h2>
       </div>
       <div>
-        <h2 className="title-video">Chat. Finally secure</h2>
+        <h2 className="title-video">Secure Chat. Coming soon</h2>
         <div className="video-buttons">
           <ALink href="https://gitpod.io/#https://github.com/hoprnet/myne-chat" target="_blank">
             <button type="button" className="launch-button">
