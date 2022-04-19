@@ -48,12 +48,16 @@ export const VideoHopr = ({}) => {
         </h2>
       </div>
       <div>
-        <h2 className="title-video">Chat. Finally secure</h2>
+        <h2 className="title-video">Secure Chat. Coming soon</h2>
         <div className="video-buttons">
-          <button type="button" className="launch-button">
-            <FontAwesomeIcon icon={faArrowDown} /> Launch 0.1 Alpha
-          </button>
-          <button type="button">Documentation</button>
+          <ALink href="https://gitpod.io/#https://github.com/hoprnet/myne-chat" target="_blank">
+            <button type="button" className="launch-button">
+            <FontAwesomeIcon icon={faArrowDown} /> Launch 0.2.0 Alpha
+            </button>
+          </ALink>
+          <ALink href="https://docs.hoprnet.org/dapps/myne-chat" target="_blank">
+            <button type="button">Documentation</button>
+          </ALink>
         </div>
       </div>
       <div className="bottom-image">
