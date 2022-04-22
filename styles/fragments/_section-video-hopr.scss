@@ -129,4 +129,22 @@
     }
   }
 
+  @media screen and (max-width: 500px) {
+    .video-text-animated {
+      bottom: 62px;
+      position: relative;
+    }
+
+
+    .aux-container {
+      .bottom-image {
+        a {
+          img {
+            width: 90px !important;
+            height: 110px !important;
+          }
+        }
+      }
+    }
+  }
 }
